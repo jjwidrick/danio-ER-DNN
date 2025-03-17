@@ -1,0 +1,24 @@
+all_joints:
+- - 0
+- - 1
+- - 2
+- - 3
+- - 4
+- - 5
+- - 6
+all_joints_names:
+- TS
+- S1
+- S2
+- T1
+- T2
+- T3
+- T4
+dataset: training-datasets/iteration-4/UnaugmentedDataSet_larvae_ERMar8/larvae_ER_jwidrick80shuffle1.mat
+global_scale: 0.8
+init_weights: /home/jeffrey/anaconda3/envs/DEEPLABCUT/lib/python3.8/site-packages/deeplabcut/pose_estimation_tensorflow/models/pretrained/resnet_v1_50.ckpt
+location_refinement: true
+locref_stdev: 7.2801
+net_type: resnet_50
+num_joints: 7
+scoremap_dir: test

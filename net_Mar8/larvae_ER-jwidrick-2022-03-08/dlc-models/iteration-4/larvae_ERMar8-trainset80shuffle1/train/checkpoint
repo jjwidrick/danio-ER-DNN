@@ -1,0 +1,6 @@
+model_checkpoint_path: "/home/jeffrey/Desktop/ER_ZF_2022/ER_net/net_Mar8/larvae_ER-jwidrick-2022-03-08/dlc-models/iteration-4/larvae_ERMar8-trainset80shuffle1/train/snapshot-1000000"
+all_model_checkpoint_paths: "/home/jeffrey/Desktop/ER_ZF_2022/ER_net/net_Mar8/larvae_ER-jwidrick-2022-03-08/dlc-models/iteration-4/larvae_ERMar8-trainset80shuffle1/train/snapshot-600000"
+all_model_checkpoint_paths: "/home/jeffrey/Desktop/ER_ZF_2022/ER_net/net_Mar8/larvae_ER-jwidrick-2022-03-08/dlc-models/iteration-4/larvae_ERMar8-trainset80shuffle1/train/snapshot-700000"
+all_model_checkpoint_paths: "/home/jeffrey/Desktop/ER_ZF_2022/ER_net/net_Mar8/larvae_ER-jwidrick-2022-03-08/dlc-models/iteration-4/larvae_ERMar8-trainset80shuffle1/train/snapshot-800000"
+all_model_checkpoint_paths: "/home/jeffrey/Desktop/ER_ZF_2022/ER_net/net_Mar8/larvae_ER-jwidrick-2022-03-08/dlc-models/iteration-4/larvae_ERMar8-trainset80shuffle1/train/snapshot-900000"
+all_model_checkpoint_paths: "/home/jeffrey/Desktop/ER_ZF_2022/ER_net/net_Mar8/larvae_ER-jwidrick-2022-03-08/dlc-models/iteration-4/larvae_ERMar8-trainset80shuffle1/train/snapshot-1000000"

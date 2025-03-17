@@ -1,0 +1,88 @@
+    # Project definitions (do not edit)
+Task: larvae_ER
+scorer: jwidrick
+date: Mar8
+multianimalproject: false
+identity:
+
+    # Project path (change when moving around)
+project_path: /home/jeffrey/Desktop/2022_ER_sapje_GPU/ER_net_iter4/net_Mar8/larvae_ER-jwidrick-2022-03-08
+
+    # Annotation data set configuration (and individual video cropping parameters)
+video_sets:
+  /home/jeffrey/Desktop/2022_larvae_ER_network/larvae_ER-jwidrick-2022-03-08/videos/01029.mov:
+    crop: 0, 1280, 0, 864
+  /home/jeffrey/Desktop/2022_larvae_ER_network/larvae_ER-jwidrick-2022-03-08/videos/01035.mov:
+    crop: 0, 1280, 0, 864
+  /home/jeffrey/Desktop/2022_larvae_ER_network/larvae_ER-jwidrick-2022-03-08/videos/01042.mov:
+    crop: 0, 1280, 0, 864
+  /home/jeffrey/Desktop/2022_larvae_ER_network/larvae_ER-jwidrick-2022-03-08/videos/01046.mov:
+    crop: 0, 1280, 0, 864
+  /home/jeffrey/Desktop/2022_larvae_ER_network/larvae_ER-jwidrick-2022-03-08/videos/01059.mov:
+    crop: 0, 1280, 0, 864
+  /home/jeffrey/Desktop/2022_larvae_ER_network/larvae_ER-jwidrick-2022-03-08/videos/01062.mov:
+    crop: 0, 1280, 0, 864
+  /home/jeffrey/Desktop/2022_larvae_ER_network/larvae_ER-jwidrick-2022-03-08/videos/01066.mov:
+    crop: 0, 1280, 0, 864
+  /home/jeffrey/Desktop/2022_larvae_ER_network/larvae_ER-jwidrick-2022-03-08/videos/01072.mov:
+    crop: 0, 1280, 0, 864
+  /home/jeffrey/Desktop/2022_larvae_ER_network/larvae_ER-jwidrick-2022-03-08/videos/01078.mov:
+    crop: 0, 1280, 0, 864
+  /home/jeffrey/Desktop/2022_larvae_ER_network/larvae_ER-jwidrick-2022-03-08/videos/01088.mov:
+    crop: 0, 1280, 0, 864
+  /home/jeffrey/Desktop/2022_larvae_ER_network/larvae_ER-jwidrick-2022-03-08/videos/01112.mov:
+    crop: 0, 1280, 0, 864
+  /home/jeffrey/Desktop/2022_larvae_ER_network/larvae_ER-jwidrick-2022-03-08/videos/01128.mov:
+    crop: 0, 1280, 0, 864
+  /home/jeffrey/Desktop/2022_larvae_ER_network/larvae_ER-jwidrick-2022-03-08/videos/01137.mov:
+    crop: 0, 1280, 0, 864
+  /home/jeffrey/Desktop/2022_larvae_ER_network/larvae_ER-jwidrick-2022-03-08/videos/01146.mov:
+    crop: 0, 1280, 0, 864
+  /home/jeffrey/Desktop/2022_larvae_ER_network/larvae_ER-jwidrick-2022-03-08/videos/01154.mov:
+    crop: 0, 1280, 0, 864
+  /home/jeffrey/Desktop/2022_larvae_ER_network/larvae_ER-jwidrick-2022-03-08/videos/01167.mov:
+    crop: 0, 1280, 0, 864
+bodyparts:
+- TS
+- S1
+- S2
+- T1
+- T2
+- T3
+- T4
+
+    # Fraction of video to start/stop when extracting frames for labeling/refinement
+start: 0
+stop: 0.5
+numframes2pick: 25
+
+    # Plotting configuration
+skeleton: [[TS, S1], [S1, S2], [S2, T1], [T1, T2], [T2, T3], [T3, T4]]
+skeleton_color: black
+pcutoff: 0.6
+dotsize: 4
+alphavalue: 1
+colormap: hsv
+
+    # Training,Evaluation and Analysis configuration
+TrainingFraction:
+- 0.80
+iteration: 4
+default_net_type: resnet_50
+default_augmenter: default
+snapshotindex: all
+batch_size: 8
+
+    # Cropping Parameters (for analysis and outlier frame detection)
+cropping: false
+    #if cropping is true for analysis, then set the values here:
+x1: 0
+x2: 640
+y1: 277
+y2: 624
+
+    # Refinement configuration (parameters from annotation dataset configuration also relevant in this stage)
+corner2move2:
+- 50
+- 50
+move2corner: true
